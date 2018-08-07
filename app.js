@@ -4,7 +4,7 @@ const http = require('http');
 const path = require('path');
 
 //记录网站的根目录
-let rootPath = path.join(_dirname,'www');
+let rootPath = path.join(__dirname,'www');
 
 //创建服务器
 let server = http.createServer((request,response)=>{
@@ -12,6 +12,6 @@ let server = http.createServer((request,response)=>{
 });
 
 //开启监听
-server.listen(9000,'127.0.0.1',()=>{
+server.listen(8848,'127.0.0.1',()=>{
 	console.log('开启成功');
 })
