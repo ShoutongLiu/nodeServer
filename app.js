@@ -21,6 +21,7 @@ let server = http.createServer((request, response) => {
 				response.setHeader('content-type', mime.getType(targetPath));
 				fs.readFile(targetPath, (err, data) => {
 					//数据读取完毕
+					response.setHeader('content-type', 'text/html;charset= utf-8');
 					response.end(data);
 				});
 			}
@@ -36,6 +37,7 @@ let server = http.createServer((request, response) => {
             			</li>
 						`
 					}
+					response.setHeader('content-type', 'text/html;charset= utf-8');
 					response.end(`
 					<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 					<html>

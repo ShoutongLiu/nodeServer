@@ -1,0 +1,73 @@
+/* 
+ * @Author: Mr.桐先生 
+ * @Date: 2018-05-31 10:44:11 
+ * @Last Modified by: Mr.桐先生
+ * @Last Modified time: 2018-06-05 09:24:37
+
+
+/* 初始化 */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+html {
+    min-width: 1150px;
+    background-color: #131b24;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, 宋体;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+em {
+    font-style: normal;
+    font-weight: normal;
+}

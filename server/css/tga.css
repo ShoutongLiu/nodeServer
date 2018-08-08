@@ -1,0 +1,1187 @@
+/*
+ * @Author: Mr.桐先生 
+ * @Date: 2018-06-01 09:36:38 
+ * @Last Modified by: Mr.桐先生
+ * @Last Modified time: 2018-06-05 09:24:33
+ */
+
+/* 顶部导航栏 start */
+
+body .nav {
+    min-width: 1150px;
+}
+
+.nav {
+    width: 100%;
+    background-repeat: repeat-x;
+    background-color: #fff;
+    color: #464646;
+    left: 0;
+    top: 0 !important;
+    font-size: 12px;
+    z-index: 8000;
+    border: 1px solid #c9c9c9;
+    border-width: 1px 0;
+}
+
+.tga_inner {
+    height: 40px;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.tga_logo a {
+    width: 208px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    background: url('../imgs/ost-bg.png') 0 202px;
+}
+
+.tga_inner li img {
+    cursor: pointer;
+}
+
+.top_big img {
+    position: absolute;
+    left: 192px;
+    top: 0;
+    display: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.tga_inner h3 {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.tga_inner h3:hover {
+    color: #ff4e00;
+}
+
+.tga_inner h3:hover .tga-icon {
+    background: url('../imgs/ost-bg.png');
+    background-position: -170px -134px;
+}
+
+.tga_inner h3 a {
+    color: #464646;
+}
+
+.tga_inner h3 a:hover {
+    color: #ff4e00;
+}
+
+.tga_inner .protect {
+    padding-right: 30px;
+}
+
+.protect {
+    position: relative;
+}
+
+.protect i {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url('../imgs/logo.png') no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 12px;
+}
+
+.tga-icon {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url('../imgs/ost-bg.png');
+    background-position: -150px -134px;
+    margin: -2px 5px;
+}
+
+/* 顶部导航栏 end */
+
+/* 游戏排行榜 */
+
+.rank {
+    position: relative;
+}
+
+.rank .rank-game {
+    display: none;
+    width: 698px;
+    height: 456px;
+    background: #fff;
+    position: absolute;
+    top: 40px;
+    left: -595px;
+    z-index: 2;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #999;
+    border: 1px solid #ccc;
+}
+
+.rank .rank-game .before,
+.rank-game:before {
+    border-bottom: 7px solid #CCC;
+    border-left: 7px dashed transparent;
+    border-right: 7px dashed transparent;
+    right: 1px;
+    top: -7px;
+}
+
+.rank-game .after {
+    border-bottom: 6px solid #ffffff;
+    border-left: 6px dashed transparent;
+    border-right: 6px dashed transparent;
+    right: 2px;
+    top: -6px;
+}
+
+.rank-game .before,
+.rank-game .after {
+    position: absolute;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    vertical-align: middle;
+    content: "";
+    border-top: 0 none;
+}
+
+.hot-rank-game {
+    float: left;
+    width: 212px;
+    height: 422px;
+    padding: 0 10px;
+    margin: 17px 0 8px;
+    border-left: 1px solid #e2e2e2;
+    margin-left: -1px;
+}
+
+.hot-rank-game .game-head {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hot-rank-game .col-head,
+.hot-rank-game.col-head2 {
+    float: left;
+    width: 207px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    height: 18px;
+}
+
+.hot-rank-game .game-body {
+    float: left;
+}
+
+.hot-rank-game .rank-title {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #555;
+}
+
+.hot-rank-game .rank-more {
+    float: right;
+}
+
+.rank-game a {
+    color: #707e91;
+}
+
+.rank-game .icon-font {
+    font-family: arial;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.hot-rank-game .rank-list {
+    float: left;
+    list-style: none;
+    padding: 9px 0 0;
+    margin: 0;
+}
+
+.rank-list li {
+    margin-bottom: 15px;
+}
+
+.hot-rank-game .rank-head {
+    height: 27px;
+}
+
+.hot-rank-game .rank-item,
+.hot-rank-game .rank-head {
+    float: left;
+    width: 212px;
+    overflow: visible;
+    padding: 0;
+}
+
+.hot-rank-game .rank-order {
+    width: 33px;
+    float: left;
+}
+
+.hot-rank-game .rank-name {
+    width: 170px;
+    float: left;
+}
+
+.hot-rank-game .rank-color {
+    color: #fff;
+    border: 1px solid #ff4e00;
+    background: #ff4e00;
+    width: 12px;
+    height: 12px;
+    float: left;
+    margin: 2px 15px 0 4px;
+    line-height: 12px;
+    text-align: center;
+}
+
+.hot-rank-game .rank-game-name {
+    display: inline;
+    float: left;
+    border-bottom: 9px;
+}
+
+.rank-game-cover {
+    display: none;
+    position: relative;
+    width: 194px;
+    height: 82px;
+    margin-left: 4px;
+    overflow: hidden;
+    padding: 1px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.rank-game-cover .game-mate {
+    height: 28px;
+}
+
+.rank-game-cover .game-mate,
+.rank-game-cover .game-mate2 {
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    margin: 0;
+    padding: 0;
+    width: 194px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.rank-game-cover .game-mate .game-link {
+    float: left;
+    width: 97px;
+    height: 13px;
+    line-height: 13px;
+    padding: 7px 0 8px;
+    color: #aaa;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon-home {
+    background-position: 0 0;
+}
+
+.icon-home,
+.icon-download {
+    width: 13px;
+    height: 13px;
+}
+
+.icon-home,
+.icon-download,
+.icon-home2,
+.icon-ios,
+.icon-android {
+    display: inline-block;
+    font-size: 0.1em;
+    margin: 0 5px;
+    vertical-align: top;
+    background-image: url('../imgs/rank.png');
+    background-repeat: no-repeat;
+}
+
+/* 中间背景图 start  */
+
+.index-wraper {
+    position: relative;
+    width: 100%;
+    padding-top: 505px;
+    overflow: hidden;
+}
+
+.index-wraper .i-header {
+    width: 1920px;
+    height: 900px;
+    background-image: url('../imgs/0.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    z-index: 0;
+}
+
+/* 中间背景图 end  */
+
+/* 右侧悬浮窗start */
+
+.float-r {
+    display: none;
+    width: 70px;
+    background-color: #273544;
+    border-radius: 5px;
+    border: 1px solid #293a4e;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    margin-top: -73px;
+    z-index: 10;
+}
+
+.float-r .side-wx {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #293a4e;
+    position: relative;
+}
+
+.float-r .wx-img {
+    display: none;
+    width: 180px;
+    height: 180px;
+    border: 10px solid #2a4d73;
+    position: absolute;
+    top: -126px;
+    left: -210px;
+}
+
+.float-r .icon-wx {
+    display: block;
+    width: 41px;
+    height: 32px;
+    margin: 0 auto;
+    background-position: -196px -20px;
+    background-image: url('../imgs/icon-spr.png');
+    background-repeat: no-repeat;
+}
+
+.float-r .side-wx span {
+    display: block;
+    text-align: center;
+    color: #8294aa;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 5px;
+}
+
+.float-r .back-top {
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.back-top .icon-back-top {
+    display: block;
+    width: 47px;
+    height: 20px;
+    margin: 0 auto;
+    background-image: url('../imgs/icon-spr.png');
+    background-repeat: no-repeat;
+    background-position: -318px -62px;
+}
+
+/* 右侧悬浮窗end */
+
+/* 轮播图及tga大赛 start*/
+
+.index-wraper .big-box {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 10px 10px 0;
+    background: rgba(19, 17, 37, 0.6);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.index-wraper .roll-box {
+    width: 690px;
+    height: 385px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.index-wraper .showList {
+    width: 500%;
+    height: 330px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    backface-visibility: hidden;
+    z-index: 1;
+}
+
+.index-wraper .page-bg {
+    background: #1a2531;
+}
+
+.index-wraper .showList li {
+    box-sizing: content-box;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+/* 清除浮动 */
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: " ";
+    font-size: 0;
+}
+
+.index-wraper .roll-nav .on {
+    background-color: #3079d3;
+    color: #fff;
+}
+
+.index-wraper .roll-nav {
+    overflow: hidden;
+    position: relative;
+    width: 692px;
+}
+
+.index-wraper .roll-nav a {
+    float: left;
+    width: 25%;
+    height: 55px;
+    background-color: #1f2d3a;
+    color: #8294aa;
+    font-size: 14px;
+    line-height: 55px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 轮播图及tga大赛 end*/
+
+/* TGA大奖赛重燃战火 */
+
+.index-wraper .apply-box {
+    width: 410px;
+    height: 385px;
+    padding: 0;
+    border: 0;
+    margin-bottom: 0;
+    background-color: #283146;
+}
+
+.index-wraper .apply-contR li {
+    display: block;
+    width: 400px;
+    height: 90px;
+    margin: 0 auto 5px;
+}
+
+.index-wraper .apply-contR li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* 最新资讯and近期赛程 */
+
+.index-wraper .content-box {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.index-wraper .news-box {
+    width: 640px;
+    height: 260px;
+}
+
+.index-wraper .page-bg1 {
+    background-color: #1a2531;
+    border: 1px solid #1c2834;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px;
+}
+
+.index-wraper .tit-box {
+    font-size: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.index-wraper .tit-box i {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.icon-spr {
+    background-image: url('../imgs/icon-spr.png');
+    background-repeat: no-repeat;
+}
+
+.index-wraper .icon-news {
+    width: 22px;
+    height: 20px;
+    background-position: -402px -20px;
+}
+
+.index-wraper .tit-box span {
+    font-size: 20px;
+    color: #c7dbf2;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.index-wraper .more-btn {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    font-size: 0;
+    z-index: 9;
+}
+
+.index-wraper .more-btn i {
+    float: left;
+    width: 12px;
+    height: 14px;
+    background-color: #273544;
+    margin-left: 5px;
+    background-position: -278px -144px;
+    margin-top: 4px;
+}
+
+.index-wraper .more-btn span {
+    float: left;
+    color: #839cbb;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.index-wraper .news-nav {
+    width: 488px;
+    padding-left: 152px;
+    border-bottom: 1px solid #2a3a4c;
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    margin-left: -320px;
+    font-size: 0;
+    text-align: left;
+}
+
+.index-wraper .news-nav li {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 45px;
+    line-height: 24px;
+}
+
+.index-wraper .news-nav li a {
+    display: block;
+    width: 100%;
+    height: 41px;
+    text-align: center;
+    font-size: 16px;
+    color: #839cbb;
+}
+
+.index-wraper .news-cont {
+    font-size: 0;
+}
+
+.index-wraper .news-cont .news-officical {
+    display: block;
+}
+
+.index-wraper .news-cont li span {
+    float: right;
+    color: #415062;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.index-wraper .news-cont li.first-item {
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+    padding: 20px 0 15px;
+}
+
+.index-wraper .news-cont li {
+    position: relative;
+    padding: 8px 0;
+    overflow: hidden;
+}
+
+.index-wraper .news-cont li.first-item a {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 30px;
+    max-width: none;
+    float: none;
+    color: #3c92fd;
+    padding: 0;
+}
+
+.index-wraper .news-cont li i.icon-dot {
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #5d6472;
+    top: 50%;
+    margin-top: -2px;
+    left: 2px;
+}
+
+.nav-bott {
+    border-bottom: 4px solid #3079d3;
+}
+
+.index-wraper .news-cont li a {
+    float: left;
+    color: #8294aa;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-spacing: normal;
+    max-width: 520px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+/* 近期赛程 */
+
+.index-wraper .course-box {
+    width: 360px;
+    height: 260px;
+}
+
+.icon-spr.icon-cleandar {
+    width: 22px;
+    height: 22px;
+    background-position: -318px -20px;
+}
+
+.index-wraper .course-cont {
+    border-top: 1px solid #2a3a4c;
+    margin-top: -4px;
+    padding-top: 4px;
+}
+
+.index-wraper .course-cont span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 24px;
+    color: #8294aa;
+}
+
+.index-wraper .course-cont .s-time {
+    width: 80px;
+    height: 24px;
+    background-position: -319px -140px;
+    text-align: center;
+}
+
+.index-wraper .course-cont .s-week {
+    width: 45px;
+    margin-left: 18px;
+}
+
+.index-wraper .course-cont .s-time2 {
+    width: 60px;
+}
+
+.index-wraper .course-cont .s-gane {
+    width: 140px;
+}
+
+.index-wraper .course-cont li {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* 最新视频 */
+
+.icon-spr.icon-video {
+    width: 22px;
+    height: 20px;
+    background-position: -360px -20px;
+}
+
+.index-wraper .video-list {
+    overflow: hidden;
+    margin-left: -18px;
+    padding-bottom: 10px;
+}
+
+.index-wraper .video-list .video {
+    width: 250px;
+    float: left;
+    margin: 0 0 0 18px;
+}
+
+.index-wraper .video-list .video .item {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    outline: 0;
+}
+
+.index-wraper .video-list .video .cover {
+    display: block;
+    width: 100%;
+    height: 138px;
+    position: relative;
+    overflow: hidden;
+}
+
+.index-wraper .video-list .video .cover img {
+    display: block;
+    width: 100%;
+}
+
+.index-wraper .video-list .video .cover time {
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    margin-top: 32px;
+    z-index: 2;
+}
+
+.icon-spr.icon-time {
+    width: 48px;
+    height: 18px;
+    background-position: -27px -134px;
+}
+
+.index-wraper .video-list .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.3;
+}
+
+.index-wraper .icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -47px 0 0 -34px;
+    z-index: 2;
+}
+
+.icon-spr.icon-play {
+    width: 68px;
+    height: 68px;
+    background-position: -20px -20px;
+}
+
+.index-wraper .video-list .video .video-name {
+    display: block;
+    text-align: left;
+    color: #8294aa;
+    font-size: 14px;
+    line-height: 24px;
+    height: 48px;
+    margin: 5px 0 10px;
+    overflow: hidden;
+}
+
+.index-wraper .video-list .video .video-info {
+    font-size: 12px;
+    display: block;
+    line-height: 20px;
+    color: #415062;
+    text-align: left;
+    position: relative;
+    height: 20px;
+}
+
+.index-wraper .video-list .video .video-info i.icon-game {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+.icon-spr.icon-game {
+    width: 17px;
+    height: 12px;
+    background-position: -228px -72px;
+}
+
+.index-wraper .video-list .video .video-info span.date {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* TGA大事件 */
+
+.icon-spr.icon-event {
+    width: 22px;
+    height: 20px;
+    background-position: -427px -60px;
+}
+
+.index-wraper .bigNews-cont {
+    width: 1060px;
+    height: 480px;
+    margin: 0 auto 20px;
+    background: #131b24;
+    position: relative;
+    overflow: hidden;
+}
+
+.index-wraper .bigNews-cont .bigNews-inner {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 480px;
+}
+
+.index-wraper .bigNews-cont .bigNews-part {
+    float: left;
+    width: 1060px;
+    height: 410px;
+}
+
+.index-wraper .bigNews-cont img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* 时间线 */
+
+.index-wraper .bigNews-nav {
+    width: 100%;
+    background: url('../imgs/m-line.png') center 41px no-repeat;
+}
+
+.index-wraper .bigNews-nav ul {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+}
+
+.index-wraper .bigNews-nav li {
+    display: inline-block;
+    vertical-align: top;
+    width: 14.1%;
+    cursor: pointer;
+}
+
+.index-wraper .bigNews-nav span {
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    color: #506b87;
+}
+
+.index-wraper .bigNews-nav i.icon-dot {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 5px auto 10px;
+    background-position: -208px -134px;
+}
+
+/* 精彩瞬间 */
+
+.icon-spr.icon-nice {
+    width: 22px;
+    height: 20px;
+    background-position: -385px -60px;
+}
+
+.passion1 {
+    width: 340px;
+}
+
+.passion2 {
+    width: 200px;
+}
+
+.passion3 {
+    width: 200px;
+}
+
+.passion4 {
+    width: 308px;
+}
+
+.passion2,
+.passion3,
+.passion4 {
+    margin-left: 3px;
+}
+
+.passion2 .imgbox,
+.passion4 .imgbox {
+    margin-bottom: 5px;
+}
+
+.imgbox {
+    position: relative;
+    overflow: hidden;
+}
+
+.imgbox-txt {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(48, 121, 211, 0.8);
+}
+
+.imgbox-txt h4 {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.del-t,
+.del-p {
+    color: #fff;
+}
+
+.imgbtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+
+/* 底部footer部分 */
+
+.footer-box {
+    height: 350px;
+    font-size: 12px;
+    background: url('../imgs/footer-bg.png') no-repeat center top;
+}
+
+.footer {
+    width: 1100px;
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.foot-t {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #38414c;
+}
+
+.foot-logo {
+    width: 377px;
+}
+
+.footer-box .footer-logo {
+    display: block;
+    text-indent: -9999px;
+}
+
+.footer-spr.footer-logo {
+    width: 183px;
+    height: 47px;
+    background-position: -20px -20px;
+}
+
+.footer-spr {
+    background-image: url('../imgs/footer-spr.png');
+    background-repeat: no-repeat;
+}
+
+.foot-t .media-pic {
+    margin-top: 17px;
+    margin-left: 36px;
+}
+
+.foot-t .media-pic span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 34px;
+    color: #6f7683;
+    margin: 0 0 0 40px;
+}
+
+.foot-t .media-pic a {
+    margin-left: 20px;
+}
+
+.foot-t .media-pic img {
+    border: 0;
+    vertical-align: top;
+}
+
+.foot-coor {
+    width: 434px;
+}
+
+.foot-coor p {
+    font-size: 12px;
+    color: #6f7683;
+    line-height: 24px;
+}
+
+.foot-coor ul {
+    font-size: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.foot-coor ul li.event-1 {
+    text-align: left;
+}
+
+.foot-coor ul li.event-3 {
+    text-align: right;
+}
+
+.foot-coor ul li {
+    float: left;
+    width: 33%;
+}
+
+.footer-spr.f-icon3 {
+    width: 32px;
+    height: 26px;
+    background-position: -223px -20px;
+}
+
+.footer-spr.f-icon2 {
+    width: 27px;
+    height: 26px;
+    background-position: -323px -20px;
+}
+
+.footer-spr.f-icon1 {
+    width: 28px;
+    height: 26px;
+    background-position: -275px -20px;
+}
+
+.foot-coor ul li i {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.foot-coor ul li span {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 26px;
+    color: #6f7683;
+}
+
+.foot-b {
+    width: 588px;
+}
+
+.foot-b,
+.foot-b a {
+    color: #6f7683;
+}
+
+.foot-txt {
+    width: 586px;
+    margin: 10px 0;
+}
+
+.foot-b .cb {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.hot {
+    width: 105px;
+    height: 53px;
+    position: fixed !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    z-index: 8000;
+}
+
+.hot-game {
+    display: inline-block;
+    width: 105px;
+    height: 53px;
+    text-indent: -500px;
+    background-position: 0 -160px;
+    background-image: url('../imgs/ost-bg.png');
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
